@@ -1,1 +1,3 @@
-# paypal nestjs integration
+# Nitrosly
+
+Backend discord auth app
