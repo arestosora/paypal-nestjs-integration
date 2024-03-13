@@ -11,7 +11,7 @@ export class Config {
 
     public static Database = {
         HOST: process.env.DB_HOST,
-        PORT: 3306,
+        PORT: process.env.DB_PORT,
         USERNAME: process.env.DB_USERNAME,
         PASSWORD: process.env.DB_PASSWORD,
         DATABASE: process.env.DB_DATABASE
