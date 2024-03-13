@@ -7,7 +7,7 @@ export const DatabaseConfig: TypeOrmModuleOptions = {
     host: Config.Database.HOST,
     username: Config.Database.USERNAME,
     password: Config.Database.PASSWORD,
-    port: 3306,
+    port: parseInt(Config.Database.PORT),
     database: Config.Database.DATABASE,
     synchronize: true,
     entities: Entities
