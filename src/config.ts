@@ -22,6 +22,7 @@ export class Config {
     }
 
     public static Client = {
-        ORIGIN: process.env.CLIENT_ORIGIN
+        ORIGIN: process.env.CLIENT_ORIGIN,
+        HOME: 'http://localhost:4200/home',
     }
 }

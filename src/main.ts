@@ -22,9 +22,7 @@ async function main() {
   }))
   app.use(passport.initialize());
   app.use(passport.session());
-  app.enableCors({
-    origin: [Config.Client.ORIGIN], credentials: true
-  })
+  app.enableCors()
   await app.listen(3000);
 }
 main();
