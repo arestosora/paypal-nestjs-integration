@@ -4,7 +4,6 @@ import * as session from 'express-session';
 import { TypeormStore } from 'connect-typeorm';
 import { Session } from './modules/database/schemas/Session';
 import { DataSource } from 'typeorm';
-import { Config } from './config';
 import * as passport from 'passport';
 
 async function main() {
@@ -12,7 +11,7 @@ async function main() {
   const sessionRepository = app.get(DataSource).getRepository(Session);
   app.setGlobalPrefix('v1/api');
   app.use(session({
-    secret: Config.Session.SECRET,
+    secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
     cookie: {

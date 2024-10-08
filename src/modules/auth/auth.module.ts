@@ -2,8 +2,8 @@ import { Module } from '@nestjs/common';
 import { AuthController } from './controllers/auth.controller';
 import { AuthService } from './services/auth.service';
 import { UsersModule } from '../users/users.module';
-import { Services } from 'src/utils/constants';
-import { DiscordStrategy } from './utils/DiscordStrategy';
+import { Services } from 'src/common/constants';
+import { DiscordStrategy } from './core/DiscordStrategy';
 import { SessionSerializer } from 'src/core/SessionSerializer';
 
 @Module({
