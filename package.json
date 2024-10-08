@@ -27,6 +27,7 @@
     "@nestjs/platform-express": "^10.4.4",
     "@nestjs/typeorm": "^10.0.2",
     "@prisma/client": "^5.20.0",
+    "@sapphire/time-utilities": "^1.7.12",
     "connect-typeorm": "^2.0.0",
     "express-session": "^1.18.0",
     "mysql2": "^3.11.3",
